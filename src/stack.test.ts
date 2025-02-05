@@ -1,3 +1,5 @@
+import { Stack } from "./stack";
+
 describe("Stack", () => {
   it("should return true for a new stack when checked if empty", () => {
     let stack = new Stack();
