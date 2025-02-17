@@ -13,4 +13,8 @@ describe("Stack", () => {
   it("should return 0 when new stack size is checked", () => {
     expect(stack.size()).toBe(0);
   });
+
+  it("should allow us to push element", () => {
+    expect(stack.push(4)).toBe(4);
+  })
 });
