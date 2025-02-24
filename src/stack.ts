@@ -5,7 +5,7 @@ export class Stack {
   }
 
   isEmpty(): boolean {
-    return true;
+    return this.items.length === 0;
   }
 
   size(): number {
