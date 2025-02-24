@@ -9,7 +9,7 @@ export class Stack {
   }
 
   size(): number {
-    return 0;
+    return this.items.length;
   }
 
   push(item: number): number {
