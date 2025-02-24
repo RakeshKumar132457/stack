@@ -18,6 +18,11 @@ describe("Stack", () => {
     expect(stack.push(4)).toBe(4);
   });
 
+  it("should return false when we push an element into the stack", () => {
+    stack.push(4);
+    expect(stack.isEmpty()).toBe(false);
+  })
+
   it("should throw error top pop element from empty list", () => {
     expect(() => stack.pop()).toThrow("Cannot pop from empty stack");
   });
