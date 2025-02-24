@@ -16,5 +16,9 @@ describe("Stack", () => {
 
   it("should allow us to push element", () => {
     expect(stack.push(4)).toBe(4);
-  })
+  });
+
+  it("should throw error top pop element from empty list", () => {
+    expect(stack.pop()).toThrow("Cannot pop from empty stack");
+  });
 });
