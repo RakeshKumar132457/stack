@@ -16,4 +16,10 @@ export class Stack {
     this.items.push(item);
     return item;
   }
+
+  pop(): void {
+    if (!this.items.length) {
+      throw new Error("Cannot pop from empty stack");
+    }
+  }
 }
