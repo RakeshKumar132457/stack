@@ -1,7 +1,7 @@
-export class Stack {
-  private items: Array<number>;
+export class Stack<T> {
+  private items: Array<T>;
   constructor() {
-    this.items = new Array<number>();
+    this.items = new Array<T>();
   }
 
   isEmpty(): boolean {
@@ -12,12 +12,12 @@ export class Stack {
     return this.items.length;
   }
 
-  push(item: number): number {
+  push(item: T): T {
     this.items.push(item);
     return item;
   }
 
-  pop(): number {
+  pop(): T {
     if (this.isEmpty()) {
       throw new Error("Cannot pop from empty stack");
     }
