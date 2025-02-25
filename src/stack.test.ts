@@ -38,4 +38,12 @@ describe("Stack", () => {
       expect(stack.pop()).toBe(4);
     });
   });
+
+  describe("Generic type support", () => {
+    it("should work with strings", () => {
+      const stringStack = new Stack<string>();
+      stringStack.push("hello");
+      expect(stringStack.pop()).toBe("hello");
+    });
+  });
 });
